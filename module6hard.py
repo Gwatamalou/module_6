@@ -31,6 +31,7 @@ class Figure:
             self.__color = [r, g, b] if self.__is_valid_color(r, g, b) else 'Цвет должен быть в формате RGB'
         elif self.__is_valid_color(r, g, b):
             self.__color = [r, g, b]
+
     def set_side(self, *args):
         if not self.__sides:
             self.__sides = list(args) if self.__is_valid_sides(args) else list([1] * self.side_count)
