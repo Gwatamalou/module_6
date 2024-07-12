@@ -1,5 +1,4 @@
 class Animal:
-
     def __init__(self, name):
         self.alive = True
         self.fed = False
@@ -21,23 +20,20 @@ class Plant:
         self.name = name
 
 class Mammal(Animal):
-    def __init__(self, name):
-        super().__init__(name)
+    pass
 
 
 class Predator(Animal):
-    def __init__(self, name):
-        super().__init__(name)
+    pass
 
 
 class Flower(Plant):
-    def __init__(self, name):
-        super().__init__(name)
-
+    pass
         
 class Fruit(Plant):
     def __init__(self, name):
         super().__init__(name, True)
+
 
 
 
