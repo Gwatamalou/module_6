@@ -11,10 +11,12 @@ class Figure:
         self.set_sides(*args)
         self.set_color(*color)
 
-    # Color methods
+   
     def __len__(self):
         return sum(x for x in self.__sides)
 
+     # Color methods
+    
     def __is_valid_color(self, r, g, b):
         return True if r >= 0 and g >= 0 and b >= 0 and r < 255 and g < 255 and b < 255 else False
 
